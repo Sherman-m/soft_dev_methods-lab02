@@ -3,7 +3,9 @@
 #include <format>
 #include <iostream>
 
-void GameEngine::Start() {
+namespace games {
+
+void Engine::Start() {
   std::cout << "Welcome to the Brain Games!\nMay I have your name? ";
   std::cin >> player_name_;
   std::cout << std::format("\nHello, {}!\n", player_name_);
@@ -18,3 +20,5 @@ void GameEngine::Start() {
       (game_ptr->Play()) ? "Congratulations" : "Let's try again";
   std::cout << std::format("{}, {}!\n", answer_to_player, player_name_);
 }
+
+}  // namespace games

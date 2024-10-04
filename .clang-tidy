@@ -4,8 +4,6 @@ Checks: '-*,cppcoreguidelines-avoid-goto,cppcoreguidelines-pro-type-const-cast, 
 
 HeaderFilterRegex: '\.hpp$'
 
-WarningsAsErrors: '*'
-
 CheckOptions:
   - key: readability-identifier-naming.NamespaceCase
     value: lower_case

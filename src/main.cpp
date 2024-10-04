@@ -8,7 +8,7 @@ int main(int argc, char* argv[]) {
                  "make start -- <LCM|GEOMPROG>\n";
     return EXIT_FAILURE;
   }
-  GameEngine engine{argv[1]};
+  games::Engine engine{argv[1]};
   engine.Start();
   return EXIT_SUCCESS;
 }

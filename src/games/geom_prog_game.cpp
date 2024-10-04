@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+namespace games {
+
 bool GeometricProgressionGame::PlayBatch() {
   std::int64_t len = len_distrib_(gen_);
   std::int64_t b = param_distrib_(gen_);
@@ -27,3 +29,5 @@ bool GeometricProgressionGame::PlayBatch() {
 
   return CheckResult(actual, expected);
 }
+
+}  // namespace games

@@ -2,7 +2,8 @@
 
 #include "common_game.hpp"
 
-// LCM Game
+namespace games {
+
 class LcmGame : public CommonGame {
  public:
   explicit LcmGame(std::mt19937& gen)
@@ -33,3 +34,5 @@ class LcmGame : public CommonGame {
 
   IntDistrib value_distrib_{0, 2500};
 };
+
+}  // namespace games

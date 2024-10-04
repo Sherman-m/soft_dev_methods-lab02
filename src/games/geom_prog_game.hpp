@@ -1,7 +1,8 @@
 #pragma once
 #include "common_game.hpp"
 
-// Geometric Progression Game
+namespace games {
+
 class GeometricProgressionGame : public CommonGame {
  public:
   explicit GeometricProgressionGame(std::mt19937& gen)
@@ -19,3 +20,5 @@ class GeometricProgressionGame : public CommonGame {
   IntDistrib param_distrib_{k_min_max_param_value_.first,
                             k_min_max_param_value_.second};
 };
+
+}  // namespace games

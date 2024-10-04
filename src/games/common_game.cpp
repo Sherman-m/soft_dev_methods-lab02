@@ -3,6 +3,8 @@
 #include <format>
 #include <iostream>
 
+namespace games {
+
 bool CommonGame::Play() {
   for (int batch = 0; batch < k_max_batches_; ++batch) {
     if (!PlayBatch()) {
@@ -23,3 +25,5 @@ bool CommonGame::CheckResult(std::int64_t actual, std::int64_t expected) {
 
   return actual == expected;
 }
+
+}  // namespace games

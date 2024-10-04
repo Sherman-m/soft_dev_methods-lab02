@@ -8,10 +8,11 @@
 #include "geom_prog_game.hpp"
 #include "lcm_game.hpp"
 
-// Engine
-class GameEngine {
+namespace games {
+
+class Engine {
  public:
-  explicit GameEngine(std::string game_code)
+  explicit Engine(std::string game_code)
       : game_code_(std::move(game_code)) {
   }
 
@@ -29,3 +30,5 @@ class GameEngine {
   std::string game_code_;
   std::mt19937 gen_{std::random_device{}()};
 };
+
+}  // namespace games

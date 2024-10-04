@@ -2,6 +2,8 @@
 
 #include <random>
 
+namespace games {
+
 class CommonGame {
  public:
   explicit CommonGame(std::mt19937& gen)
@@ -24,3 +26,5 @@ class CommonGame {
 
   const int k_max_batches_{3};
 };
+
+}  // namespace games

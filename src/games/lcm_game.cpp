@@ -3,6 +3,8 @@
 #include <format>
 #include <iostream>
 
+namespace games {
+
 bool LcmGame::PlayBatch() {
   std::int64_t a = value_distrib_(gen_);
   std::int64_t b = value_distrib_(gen_);
@@ -20,3 +22,5 @@ bool LcmGame::PlayBatch() {
 
   return CheckResult(actual, expected);
 }
+
+}  // namespace games
