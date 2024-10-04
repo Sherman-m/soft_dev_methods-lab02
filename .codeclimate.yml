@@ -1,0 +1,9 @@
+version: "2"
+plugins:
+  cppcheck:
+    enabled: true
+    config:
+      language: c++
+      platform: unix64
+      dump: false
+      jobs: 4

@@ -49,3 +49,8 @@ lint:
 clean:
 	rm -rf build_*
 
+# CodeClimate
+.PHONY: codeclimate
+codeclimate:
+	codeclimate analyze src
+
