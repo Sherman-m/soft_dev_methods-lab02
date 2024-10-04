@@ -14,5 +14,5 @@
 | `make start-release GAME_CODE=<GAME_CODE>` | Запуск игры с соответствующим GAME_CODE в режиме Release |
 | `make check-lint` | Запуск линтеров для проверки кода (ничего не исправляют, только выводят предупреждения). Конфиги: [.clang-format](.clang-format) и [.clang-tidy](.clang-tidy) |
 | `make lint` | Запуск линтеров для изменения кода. Конфиги: [.clang-format](.clang-format) и [.clang-tidy](.clang-tidy) |
-| `make clean` | Удаление всех директории сборки |
+| `make clean` | Удаление всех директорий сборки |
 | `make codeclimate` | Запуск статического анализатора [Codeclimate CLI](https://github.com/codeclimate/codeclimate) |
