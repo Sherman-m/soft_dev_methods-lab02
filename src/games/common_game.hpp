@@ -12,7 +12,7 @@ class CommonGame {
 
   bool Play();
 
-  bool CheckResult(std::int64_t actual, std::int64_t expected);
+  bool CheckResult(std::int64_t expected);
 
   virtual ~CommonGame() = default;
 

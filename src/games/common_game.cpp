@@ -14,7 +14,11 @@ bool CommonGame::Play() {
   return true;
 }
 
-bool CommonGame::CheckResult(std::int64_t actual, std::int64_t expected) {
+bool CommonGame::CheckResult(std::int64_t expected) {
+  std::cout << "\nYour answer: ";
+  std::int64_t actual;
+  std::cin >> actual;
+
   if (actual == expected) {
     std::cout << "\nCorrect!\n";
   } else {

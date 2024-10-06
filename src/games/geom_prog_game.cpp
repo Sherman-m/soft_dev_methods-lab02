@@ -23,11 +23,7 @@ bool GeometricProgressionGame::PlayBatch() {
     b *= q;
   }
 
-  std::cout << "\nYour answer: ";
-  std::int64_t actual;
-  std::cin >> actual;
-
-  return CheckResult(actual, expected);
+  return CheckResult(expected);
 }
 
 }  // namespace games

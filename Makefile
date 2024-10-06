@@ -35,19 +35,19 @@ start-debug start-release: start-%: build-%
 # Linters
 .PHONY: 
 check-lint:
-	find src -name '*pp' -type f | xargs $(CLANG_TIDY) --warnings-as-errors='*' --extra-arg=-std=c++20
+	find src -name '*pp' -type f | xargs $(CLANG_TIDY) --quiet --warnings-as-errors='*' --extra-arg=-std=c++20
 	find src -name '*pp' -type f | xargs $(CLANG_FORMAT) --Werror --dry-run
 
 # Linters
 .PHONY: 
 lint:
-	find src -name '*pp' -type f | xargs $(CLANG_TIDY) --extra-arg=-std=c++20 --fix
+	find src -name '*pp' -type f | xargs $(CLANG_TIDY) --quiet --extra-arg=-std=c++20 --fix
 	find src -name '*pp' -type f | xargs $(CLANG_FORMAT) -i
 
 # Clean
 .PHONY: clean
 clean:
-	rm -rf build_*
+	rm -rf build*
 
 # CodeClimate
 .PHONY: codeclimate
