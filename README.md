@@ -1,5 +1,7 @@
 # Лабораторная работа №2
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/ef8e8197b17f1d13c7b6/maintainability)](https://codeclimate.com/github/Sherman-m/soft_dev_methods-lab02/maintainability)
+
 ## Сборка и запуск
 
 Сборка и запуск приложения производится с использованием Makefile.
@@ -16,3 +18,20 @@
 | `make lint` | Запуск линтеров для изменения кода. Конфиги: [.clang-format](.clang-format) и [.clang-tidy](.clang-tidy) |
 | `make clean` | Удаление всех директорий сборки |
 | `make codeclimate` | Запуск статического анализатора [Codeclimate CLI](https://github.com/codeclimate/codeclimate) |
+
+## Пример запуска:
+
+Запуск игры *LCM* (*L*east *C*ommon *M*ultiple):
+
+[![asciicast](https://asciinema.org/a/e369qTi8ZloEP9Jo3MdsJilg0.svg)](https://asciinema.org/a/e369qTi8ZloEP9Jo3MdsJilg0)
+
+
+Запуск игры *Geometry Progression*:
+
+[![asciicast](https://asciinema.org/a/8yXG4rEJmdKEhiUQzFuxIlWmN.svg)](https://asciinema.org/a/8yXG4rEJmdKEhiUQzFuxIlWmN)
+
+
+Сценарий с неправильным ответом:
+
+[![asciicast](https://asciinema.org/a/oxaQQ0E0WFb7BWdmvk1MxZ848.svg)](https://asciinema.org/a/oxaQQ0E0WFb7BWdmvk1MxZ848)
+
