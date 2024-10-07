@@ -2,6 +2,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ef8e8197b17f1d13c7b6/maintainability)](https://codeclimate.com/github/Sherman-m/soft_dev_methods-lab02/maintainability)
 
+## Описание:
+
 ## Сборка и запуск
 
 Сборка и запуск приложения производится с использованием Makefile.
@@ -19,19 +21,30 @@
 | `make clean` | Удаление всех директорий сборки |
 | `make codeclimate` | Запуск статического анализатора [Codeclimate CLI](https://github.com/codeclimate/codeclimate) |
 
+Коды доступных игр:
+
+- <b>LCM</b> (<b>L</b>east <b>C</b>ommon <b>M</b>ultiple) - найти наименьшее общее кратное 3-х
+  чисел;
+
+- <b>GEOMPROG</b> (<b>Geom</b>etry <b>Prog</b>ression) - найти пропущенный элемент
+  геометрической прогрессии.
+
+Для запуска опредленной игры необоходимо передать ее код в переменную `GAME_CODE=` во выполнения команды `make start-*`.<br> 
+Например: запустить игру <b>LCM</b> можно командой `make start-release GAME_CODE=LCM`.
+
 ## Пример запуска:
 
-Запуск игры *LCM* (*L*east *C*ommon *M*ultiple):
+Запуск игры <b>LCM</b> (<b>L</b>east <b>C</b>ommon <b>M</b>ultiple):
 
 [![asciicast](https://asciinema.org/a/e369qTi8ZloEP9Jo3MdsJilg0.svg)](https://asciinema.org/a/e369qTi8ZloEP9Jo3MdsJilg0)
 
 
-Запуск игры *Geometry Progression*:
+Запуск игры <b>GEOMPROG</b> (<b>Geom</b>etry <b>Prog</b>ression):
 
 [![asciicast](https://asciinema.org/a/8yXG4rEJmdKEhiUQzFuxIlWmN.svg)](https://asciinema.org/a/8yXG4rEJmdKEhiUQzFuxIlWmN)
 
 
-Сценарий с неправильным ответом:
+Сценарий игры с неправильным ответом:
 
 [![asciicast](https://asciinema.org/a/oxaQQ0E0WFb7BWdmvk1MxZ848.svg)](https://asciinema.org/a/oxaQQ0E0WFb7BWdmvk1MxZ848)
 
