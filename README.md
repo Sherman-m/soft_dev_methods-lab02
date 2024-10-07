@@ -4,7 +4,10 @@
 
 ## Описание:
 
-## Сборка и запуск
+Добро пожаловать в Brain Games! Только сегодня у вас есть уникальная возможность
+сыграть в ряд увлекательных игр! Не упустите эту возможность!
+
+## Сборка и запуск:
 
 Сборка и запуск приложения производится с использованием Makefile.
 
@@ -12,10 +15,10 @@
 
 | Команда | Описание |
 |---------|----------|
-| `make build-debug` | Сборка приложения в режиме Debug |
-| `make build-release` | Сборка приложения в режиме Release | 
-| `make start-debug GAME_CODE=<GAME_CODE>` | Запуск игры с соответствующим GAME_CODE в режиме Debug |
-| `make start-release GAME_CODE=<GAME_CODE>` | Запуск игры с соответствующим GAME_CODE в режиме Release |
+| `make build-debug` | Сборка приложения в режиме `Debug` |
+| `make build-release` | Сборка приложения в режиме `Release` | 
+| `make start-debug GAME_CODE=<GAME_CODE>` | Запуск игры с соответствующим `GAME_CODE` в режиме `Debug` |
+| `make start-release GAME_CODE=<GAME_CODE>` | Запуск игры с соответствующим `GAME_CODE` в режиме `Release` |
 | `make check-lint` | Запуск линтеров для проверки кода (ничего не исправляют, только выводят предупреждения). Конфиги: [.clang-format](.clang-format) и [.clang-tidy](.clang-tidy) |
 | `make lint` | Запуск линтеров для изменения кода. Конфиги: [.clang-format](.clang-format) и [.clang-tidy](.clang-tidy) |
 | `make clean` | Удаление всех директорий сборки |
